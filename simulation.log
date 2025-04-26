@@ -48,55 +48,207 @@ Cycle Completed: Matrix H+: 474, IMS H+: 10329, ATP: 47, ΔΨ: 0.14382
 Cycle Completed: Matrix H+: 466, IMS H+: 10336, ATP: 48, ΔΨ: 0.14429
 Cycle Completed: Matrix H+: 458, IMS H+: 10343, ATP: 49, ΔΨ: 0.14478
 Cycle Completed: Matrix H+: 450, IMS H+: 10350, ATP: 50, ΔΨ: 0.14526
-Cycle Completed: Matrix H+: 442, IMS H+: 10357, ATP: 51, ΔΨ: 0.14576
-Cycle Completed: Matrix H+: 434, IMS H+: 10364, ATP: 52, ΔΨ: 0.14627
-Cycle Completed: Matrix H+: 426, IMS H+: 10371, ATP: 53, ΔΨ: 0.14678
-Cycle Completed: Matrix H+: 418, IMS H+: 10378, ATP: 54, ΔΨ: 0.14731
-Cycle Completed: Matrix H+: 410, IMS H+: 10385, ATP: 55, ΔΨ: 0.14784
-Cycle Completed: Matrix H+: 402, IMS H+: 10392, ATP: 56, ΔΨ: 0.14839
-Cycle Completed: Matrix H+: 394, IMS H+: 10399, ATP: 57, ΔΨ: 0.14894
-Cycle Completed: Matrix H+: 386, IMS H+: 10406, ATP: 58, ΔΨ: 0.14951
-Cycle Completed: Matrix H+: 378, IMS H+: 10413, ATP: 59, ΔΨ: 0.15008
-Cycle Completed: Matrix H+: 370, IMS H+: 10420, ATP: 60, ΔΨ: 0.15067
-Cycle Completed: Matrix H+: 362, IMS H+: 10427, ATP: 61, ΔΨ: 0.15127
-Cycle Completed: Matrix H+: 354, IMS H+: 10434, ATP: 62, ΔΨ: 0.15189
-Cycle Completed: Matrix H+: 346, IMS H+: 10441, ATP: 63, ΔΨ: 0.15252
-Cycle Completed: Matrix H+: 338, IMS H+: 10448, ATP: 64, ΔΨ: 0.15316
-Cycle Completed: Matrix H+: 330, IMS H+: 10455, ATP: 65, ΔΨ: 0.15382
-Cycle Completed: Matrix H+: 322, IMS H+: 10462, ATP: 66, ΔΨ: 0.15449
-Cycle Completed: Matrix H+: 314, IMS H+: 10469, ATP: 67, ΔΨ: 0.15518
-Cycle Completed: Matrix H+: 306, IMS H+: 10476, ATP: 68, ΔΨ: 0.15589
-Cycle Completed: Matrix H+: 298, IMS H+: 10483, ATP: 69, ΔΨ: 0.15661
-Cycle Completed: Matrix H+: 290, IMS H+: 10490, ATP: 70, ΔΨ: 0.15736
-Cycle Completed: Matrix H+: 282, IMS H+: 10497, ATP: 71, ΔΨ: 0.15812
-Cycle Completed: Matrix H+: 274, IMS H+: 10504, ATP: 72, ΔΨ: 0.15891
-Cycle Completed: Matrix H+: 266, IMS H+: 10511, ATP: 73, ΔΨ: 0.15972
-Cycle Completed: Matrix H+: 258, IMS H+: 10518, ATP: 74, ΔΨ: 0.16055
-Cycle Completed: Matrix H+: 250, IMS H+: 10525, ATP: 75, ΔΨ: 0.16141
-Cycle Completed: Matrix H+: 242, IMS H+: 10532, ATP: 76, ΔΨ: 0.1623
-Cycle Completed: Matrix H+: 234, IMS H+: 10539, ATP: 77, ΔΨ: 0.16322
-Cycle Completed: Matrix H+: 226, IMS H+: 10546, ATP: 78, ΔΨ: 0.16416
-Cycle Completed: Matrix H+: 218, IMS H+: 10553, ATP: 79, ΔΨ: 0.16514
-Cycle Completed: Matrix H+: 210, IMS H+: 10560, ATP: 80, ΔΨ: 0.16616
-Cycle Completed: Matrix H+: 202, IMS H+: 10567, ATP: 81, ΔΨ: 0.16721
-Cycle Completed: Matrix H+: 194, IMS H+: 10574, ATP: 82, ΔΨ: 0.16831
-Cycle Completed: Matrix H+: 186, IMS H+: 10581, ATP: 83, ΔΨ: 0.16945
-Cycle Completed: Matrix H+: 178, IMS H+: 10588, ATP: 84, ΔΨ: 0.17065
-Cycle Completed: Matrix H+: 170, IMS H+: 10595, ATP: 85, ΔΨ: 0.17189
-Cycle Completed: Matrix H+: 162, IMS H+: 10602, ATP: 86, ΔΨ: 0.1732
-Cycle Completed: Matrix H+: 154, IMS H+: 10609, ATP: 87, ΔΨ: 0.17457
-Cycle Completed: Matrix H+: 146, IMS H+: 10616, ATP: 88, ΔΨ: 0.17601
-Cycle Completed: Matrix H+: 138, IMS H+: 10623, ATP: 89, ΔΨ: 0.17753
-Cycle Completed: Matrix H+: 130, IMS H+: 10630, ATP: 90, ΔΨ: 0.17915
-Cycle Completed: Matrix H+: 122, IMS H+: 10637, ATP: 91, ΔΨ: 0.18086
-Cycle Completed: Matrix H+: 114, IMS H+: 10644, ATP: 92, ΔΨ: 0.18269
-Cycle Completed: Matrix H+: 106, IMS H+: 10651, ATP: 93, ΔΨ: 0.18465
-Cycle Completed: Matrix H+: 98, IMS H+: 10658, ATP: 94, ΔΨ: 0.18676
-Cycle Completed: Matrix H+: 90, IMS H+: 10665, ATP: 95, ΔΨ: 0.18906
-Cycle Completed: Matrix H+: 82, IMS H+: 10672, ATP: 96, ΔΨ: 0.19156
-Cycle Completed: Matrix H+: 74, IMS H+: 10679, ATP: 97, ΔΨ: 0.19432
-Cycle Completed: Matrix H+: 66, IMS H+: 10686, ATP: 98, ΔΨ: 0.19739
-Cycle Completed: Matrix H+: 58, IMS H+: 10693, ATP: 99, ΔΨ: 0.20086
-Cycle Completed: Matrix H+: 50, IMS H+: 10700, ATP: 100, ΔΨ: 0.20485
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 448, IMS H+: 10355, ATP: 51, ΔΨ: 0.1454
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 446, IMS H+: 10360, ATP: 52, ΔΨ: 0.14553
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 444, IMS H+: 10365, ATP: 53, ΔΨ: 0.14566
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 442, IMS H+: 10370, ATP: 54, ΔΨ: 0.14579
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 440, IMS H+: 10375, ATP: 55, ΔΨ: 0.14593
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 438, IMS H+: 10380, ATP: 56, ΔΨ: 0.14606
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 436, IMS H+: 10385, ATP: 57, ΔΨ: 0.1462
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 434, IMS H+: 10390, ATP: 58, ΔΨ: 0.14633
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 432, IMS H+: 10395, ATP: 59, ΔΨ: 0.14647
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 430, IMS H+: 10400, ATP: 60, ΔΨ: 0.14661
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 428, IMS H+: 10405, ATP: 61, ΔΨ: 0.14674
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 426, IMS H+: 10410, ATP: 62, ΔΨ: 0.14688
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 424, IMS H+: 10415, ATP: 63, ΔΨ: 0.14702
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 422, IMS H+: 10420, ATP: 64, ΔΨ: 0.14716
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 420, IMS H+: 10425, ATP: 65, ΔΨ: 0.1473
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 418, IMS H+: 10430, ATP: 66, ΔΨ: 0.14744
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 416, IMS H+: 10435, ATP: 67, ΔΨ: 0.14758
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 414, IMS H+: 10440, ATP: 68, ΔΨ: 0.14772
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 412, IMS H+: 10445, ATP: 69, ΔΨ: 0.14786
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 410, IMS H+: 10450, ATP: 70, ΔΨ: 0.14801
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 408, IMS H+: 10455, ATP: 71, ΔΨ: 0.14815
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 406, IMS H+: 10460, ATP: 72, ΔΨ: 0.14829
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 404, IMS H+: 10465, ATP: 73, ΔΨ: 0.14844
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 402, IMS H+: 10470, ATP: 74, ΔΨ: 0.14858
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 400, IMS H+: 10475, ATP: 75, ΔΨ: 0.14873
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 398, IMS H+: 10480, ATP: 76, ΔΨ: 0.14888
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 396, IMS H+: 10485, ATP: 77, ΔΨ: 0.14902
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 394, IMS H+: 10490, ATP: 78, ΔΨ: 0.14917
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 392, IMS H+: 10495, ATP: 79, ΔΨ: 0.14932
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 390, IMS H+: 10500, ATP: 80, ΔΨ: 0.14947
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 388, IMS H+: 10505, ATP: 81, ΔΨ: 0.14962
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 386, IMS H+: 10510, ATP: 82, ΔΨ: 0.14977
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 384, IMS H+: 10515, ATP: 83, ΔΨ: 0.14992
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 382, IMS H+: 10520, ATP: 84, ΔΨ: 0.15008
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 380, IMS H+: 10525, ATP: 85, ΔΨ: 0.15023
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 378, IMS H+: 10530, ATP: 86, ΔΨ: 0.15038
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 376, IMS H+: 10535, ATP: 87, ΔΨ: 0.15054
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 374, IMS H+: 10540, ATP: 88, ΔΨ: 0.15069
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 372, IMS H+: 10545, ATP: 89, ΔΨ: 0.15085
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 370, IMS H+: 10550, ATP: 90, ΔΨ: 0.151
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 368, IMS H+: 10555, ATP: 91, ΔΨ: 0.15116
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 366, IMS H+: 10560, ATP: 92, ΔΨ: 0.15132
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 364, IMS H+: 10565, ATP: 93, ΔΨ: 0.15148
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 362, IMS H+: 10570, ATP: 94, ΔΨ: 0.15164
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 360, IMS H+: 10575, ATP: 95, ΔΨ: 0.1518
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 358, IMS H+: 10580, ATP: 96, ΔΨ: 0.15196
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 356, IMS H+: 10585, ATP: 97, ΔΨ: 0.15212
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 354, IMS H+: 10590, ATP: 98, ΔΨ: 0.15229
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 352, IMS H+: 10595, ATP: 99, ΔΨ: 0.15245
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+Cycle Completed: Matrix H+: 350, IMS H+: 10600, ATP: 100, ΔΨ: 0.15261
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
 ATP Synthase Error: Differential or ADP absent
-Cycle Completed: Matrix H+: 40, IMS H+: 10710, ATP: 100, ΔΨ: 0.21083
+Cycle Completed: Matrix H+: 342, IMS H+: 10608, ATP: 100, ΔΨ: 0.15325

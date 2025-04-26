@@ -31,7 +31,23 @@ class calculateETC():
         return deltaPSI
 
 
-# Stores all molecules in cell
+# Basic enzymes for mitochondiral matrix
+
+class ClassMatrixEnzymes():
+    def __init__(self, matrix):
+        self.matrix = matrix
+
+    def pyruvate_dehydrogenase(self):
+        if (self.matrix.O2 >= 1 and self.matrix.pyruvate >= 1):
+            self.matrix.pyruvate -= 1
+            self.matrix.acetylCoA += 1
+            self.matrix.O2 -= 1
+            self.matrix.CO2 += 1
+
+    
+
+# TODO: transfer M.ATP to C.ATP
+# Stores all molecules in cytoplasm
 class cellState():
 
     def __init__(self):
@@ -41,8 +57,17 @@ class cellState():
         self.ATP = 0
 
         # Common Molecules
-        self.oxygen = 100
-        self.water = 100
+        self.O2 = 100
+        self.H2O = 100
+
+
+class ClassCAC():
+
+    def __init__(self, matrix):
+        self.matrix = matrix
+
+
+
 
 
 # Stores all molecules in matrix
@@ -51,6 +76,12 @@ class matrixState():
     def __init__(self):
         self.calc = calculateETC(self)
         self.ETC = ClassETC(self)
+        self.CAC = ClassCAC(self)
+        self.mEnzymes = ClassMatrixEnzymes(self)
+
+        # Working Molecules
+        self.pyruvate = 100
+        self.acetylCoA = 100
 
         # Electron Carriers
         self.FADH2 = 100
@@ -72,8 +103,10 @@ class matrixState():
         self.cytochromeC_Fe2 = 1
 
         # Common Molecules
-        self.oxygen = 100
-        self.water = 100
+        self.O2 = 100
+        self.H2O = 100
+        self.CO2 = 100
+        
 
 
 # Electron Transport Chain
@@ -144,7 +177,7 @@ class ClassETC():
     def ComplexIV(self, matrix):
 
         # Cytochrome donates its electrons
-        if (matrix.cytochromeC_Fe2):
+        if (matrix.cytochromeC_Fe2 and matrix.O2 >= 1):
             matrix.cytochromeC_Fe2 -= 1
             matrix.cytochromeC_Fe3 += 1
 
@@ -157,10 +190,12 @@ class ClassETC():
         else:
             logger.error("Complex IV Error: No cytochrome_Fe2")
 
-        if (matrix.oxygen >= 1):
-            matrix.oxygen -= 1 # diatomic oxygen
+        if (matrix.O2 >= 1):
+            matrix.O2 -= 1 # diatomic O2
             matrix.protonsM -= 4
-            matrix.water += 2
+            matrix.H2O += 2
+        else:
+            logger.error("Complex IV Error: No free O2")
 
     # Uses proton differential to drive 3 H+ into matrix and use ocidative phosphylation to make ADP -> ATP (Note: moving protons = electricity!)
     def ATPSynthase(self, matrix):
@@ -178,27 +213,28 @@ class ClassETC():
         status = (
             f"NADH:{matrix.NADH} | NAD:{matrix.NAD} | FADH2:{matrix.FADH2} | FAD:{matrix.FAD} | "
             f"ADP:{matrix.ADP} | ATP:{matrix.ATP} | "
-            f"Oxygen:{matrix.oxygen} | Water:{matrix.water}"
+            f"O2:{matrix.O2} | H2O:{matrix.H2O}"
         )
         molecule_logger.info(status)
 
     # Cycle through the ETC
-    def Cycle(self, Bigcell):
-        self.ComplexI(Bigcell)
-        self.ComplexII(Bigcell)
-        self.ComplexIII(Bigcell)
-        self.ComplexIV(Bigcell)
-        self.ATPSynthase(Bigcell)
-        self.exportStatus(Bigcell)
-        logger.info(f"Cycle Completed: Matrix H+: {Bigcell.protonsM}, IMS H+: {Bigcell.protonsIM}, ATP: {Bigcell.ATP}, ΔΨ: {round(Bigcell.calc.protonDifferential() , 5)}")
+    def Cycle(self, matrix):
+        self.ComplexI(matrix)
+        self.ComplexII(matrix)
+        self.ComplexIII(matrix)
+        self.ComplexIV(matrix)
+        self.ATPSynthase(matrix)
+        self.exportStatus(matrix)
+        self.matrix.mEnzymes.pyruvate_dehydrogenase()
+        logger.info(f"Cycle Completed: Matrix H+: {matrix.protonsM}, IMS H+: {matrix.protonsIM}, ATP: {matrix.ATP}, ΔΨ: {round(matrix.calc.protonDifferential() , 5)}")
 
 
 
-Bigcell = matrixState()
-Bigcell.ETC.Cycle(Bigcell) 
+matrixMAIN = matrixState()
+matrixMAIN.ETC.Cycle(matrixMAIN) 
 
 for i in range(100):
-    Bigcell.ETC.Cycle(Bigcell)
+    matrixMAIN.ETC.Cycle(matrixMAIN)
     time.sleep(.01)
 
 
