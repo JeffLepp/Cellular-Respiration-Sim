@@ -2,7 +2,7 @@ import math
 import json
 import time
 import subprocess
-from Logging_config import logger, molecule_logger
+from ETClog import logger, molecule_logger, CAC_logger
 
 
 # Basic calculations for ETC
@@ -38,15 +38,64 @@ class ClassMatrixEnzymes():
         self.matrix = matrix
 
     def pyruvate_dehydrogenase(self):
-        if (self.matrix.O2 >= 1 and self.matrix.pyruvate >= 1):
+        if (self.matrix.O2 >= 1 and self.matrix.pyruvate >= 1 and self.matrix.NAD >= 1):
             self.matrix.pyruvate -= 1
+            self.matrix.NAD -= 1
             self.matrix.acetylCoA += 1
-            self.matrix.O2 -= 1
             self.matrix.CO2 += 1
+            self.matrix.NAD += 1
 
+    def citrate_synthase(self):
+        if (self.matrix.acetylCoA >= 1 & self.matrix.oxaloacetate >= 1):
+            self.matrix.acetylCoA -= 1
+            self.matrix.oxaloacetate -= 1
+            self.matrix.citrate += 1
+
+    def aconitase(self):
+        if (self.matrix.citrate >= 1):
+            self.matrix.citrate -= 1
+            self.matrix.isocitrate += 1
+
+    def isocitrate_dehydrogenase(self):
+        if (self.matrix.isocitrate >=1):
+            self.matrix.isocitrate -= 1
+            self.matrix.αKetoglutarate += 1
     
+    def αKetoglutarate_dehydrogenase(self):
+        if (self.matrix.αKetoglutarate >= 1 and self.matrix.NAD >= 1):
+            self.matrix.αKetoglutarate -= 1
+            self.matrix.succinylCoA += 1
+            self.matrix.CO2 += 1
+            self.matrix.NAD -= 1
+            self.matrix.NADH += 1
+
+    def succinylCoA_synthetase(self):
+        if (self.matrix.succinylCoA >= 1 and self.matrix.GDP >= 1):
+            self.matrix.succinylCoA -= 1
+            self.matrix.succinate += 1
+            self.matrix.GDP -= 1
+            self.matrix.GTP += 1
+
+    def succinate_dehydrogenase(self):
+        if (self.matrix.succinate >= 1 and self.matrix.FADH2 >= 1):
+            self.matrix.succinate -= 1
+            self.matrix.fumarate += 1
+            self.matrix.FAD -= 1
+            self.matrix.FADH2 += 1
+
+    def fumarase(self):
+        if (self.matrix.fumarate >= 1):
+            self.matrix.fumarate -= 1
+            self.matrix.malate += 1
+
+    def malate_dehydrogenase(self):
+        if (self.matrix.malate >= 1):
+            self.matrix.malate -= 1
+            self.matrix.oxaloacetate += 1
+            self.matrix.NADH += 1
 
 # TODO: transfer M.ATP to C.ATP
+# TODO: self regulate rate of metabolism
 # Stores all molecules in cytoplasm
 class cellState():
 
@@ -60,14 +109,53 @@ class cellState():
         self.O2 = 100
         self.H2O = 100
 
+        # Glycolysis Molecules
+        self.glucose
+
 
 class ClassCAC():
 
     def __init__(self, matrix):
         self.matrix = matrix
 
+    def Cycle(self, matrix):
+        # (3C) Pyruvate + NAD → CO2 + (2C) Acetyl-CoA + NADH
+        self.matrix.mEnzymes.pyruvate_dehydrogenase()
 
+        # (2C) Acetyl-CoA + (4C) Oxaloacetate → (6C) Citrate
+        self.matrix.mEnzymes.citrate_synthase()
 
+        # (6C) Citrate → (6C) Isocitrate
+        self.matrix.mEnzymes.aconitase()
+
+        # (6C) Isocitrate → (5C) α-Ketoglutarate + CO₂ + NADH
+        self.matrix.mEnzymes.isocitrate_dehydrogenase()
+
+        # (5C) α-Ketoglutarate → (4C) Succinyl-CoA + CO₂ + NADH
+        self.matrix.mEnzymes.αKetoglutarate_dehydrogenase()
+
+        # (4C) Succinyl-CoA → (4C) Succinate + GTP
+        self.matrix.mEnzymes.succinylCoA_synthetase()
+
+        # (4C) Succinate → (4C) Fumarate + FADH2
+        self.matrix.mEnzymes.succinate_dehydrogenase()
+
+        # (4C) Fumarate → (4C) Malate
+        self.matrix.mEnzymes.fumarase()
+
+        # (4C) Malate → (4C) Oxaloacetate + NADH
+        self.matrix.mEnzymes.malate_dehydrogenase()
+
+        self.exportStatus(matrix)
+
+    def exportStatus(self, matrix):
+        status = (
+            f"AcCoA:{matrix.acetylCoA}|Cit:{matrix.citrate}|IsCit:{matrix.isocitrate}|"
+            f"aKG:{matrix.αKetoglutarate}|ScCoA:{matrix.succinylCoA}|"
+            f"Suc:{matrix.succinate}|Fum:{matrix.fumarate}|Mal:{matrix.malate}|"
+            f"OA:{matrix.oxaloacetate}"
+        )
+        CAC_logger.info(status)
 
 
 # Stores all molecules in matrix
@@ -80,8 +168,16 @@ class matrixState():
         self.mEnzymes = ClassMatrixEnzymes(self)
 
         # Working Molecules
-        self.pyruvate = 100
-        self.acetylCoA = 100
+        self.pyruvate = 100         # 3 Carbon
+        self.acetylCoA = 100        # 2 Carbon
+        self.oxaloacetate = 100     # 4 Carbon
+        self.citrate = 100          # 6 Carbon
+        self.isocitrate = 100       # 6 Carbon
+        self.αKetoglutarate = 100   # 5 Carbon
+        self.succinylCoA = 100      # 4 Carbon
+        self.succinate = 100        # 4 Carbon
+        self.fumarate = 100         # 4 Carbon
+        self.malate = 100           # 4 Carbon
 
         # Electron Carriers
         self.FADH2 = 100
@@ -91,7 +187,9 @@ class matrixState():
 
         # Energy Molecules
         self.ADP = 100
-        self.ATP = 0
+        self.GDP = 100
+        self.GTP = 10
+        self.ATP = 10
         self.protonsM = 850
         self.protonsIM = 10000
 
@@ -208,7 +306,9 @@ class ClassETC():
         else:
             logger.error("ATP Synthase Error: Differential or ADP absent")
 
-    # Correlates to console output
+        # Correlates to console output
+    
+    # Tracks number of specific molecules in matrix for CAC
     def exportStatus(self, matrix):
         status = (
             f"NADH:{matrix.NADH} | NAD:{matrix.NAD} | FADH2:{matrix.FADH2} | FAD:{matrix.FAD} | "
@@ -225,16 +325,15 @@ class ClassETC():
         self.ComplexIV(matrix)
         self.ATPSynthase(matrix)
         self.exportStatus(matrix)
-        self.matrix.mEnzymes.pyruvate_dehydrogenase()
         logger.info(f"Cycle Completed: Matrix H+: {matrix.protonsM}, IMS H+: {matrix.protonsIM}, ATP: {matrix.ATP}, ΔΨ: {round(matrix.calc.protonDifferential() , 5)}")
 
 
 
 matrixMAIN = matrixState()
-matrixMAIN.ETC.Cycle(matrixMAIN) 
 
-for i in range(100):
+for i in range(50):
     matrixMAIN.ETC.Cycle(matrixMAIN)
+    matrixMAIN.CAC.Cycle(matrixMAIN)
     time.sleep(.01)
 
 
