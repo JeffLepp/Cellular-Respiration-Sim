@@ -96,6 +96,7 @@ class ClassMatrixEnzymes():
 
 # TODO: transfer M.ATP to C.ATP
 # TODO: self regulate rate of metabolism
+#       based on available ATP GTP?
 # Stores all molecules in cytoplasm
 class cellState():
 
@@ -103,14 +104,19 @@ class cellState():
 
         # Energy Molecules
         self.ADP = 100
-        self.ATP = 0
+        self.GTP = 100
+        self.ATP = 100
 
         # Common Molecules
         self.O2 = 100
         self.H2O = 100
 
         # Glycolysis Molecules
-        self.glucose
+        self.glucose = 100
+        self.pyruvate = 100
+        self.NAD = 100
+        self.NADH = 100
+
 
 
 class ClassCAC():
