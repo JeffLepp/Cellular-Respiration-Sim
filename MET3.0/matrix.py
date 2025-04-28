@@ -1,7 +1,4 @@
 import math
-import json
-import time
-import subprocess
 from logger_config import logger, molecule_logger, CAC_logger
 
 
@@ -320,11 +317,5 @@ class ClassETC():
 
 
 
-matrixMAIN = matrixState()
-
-for i in range(50):
-    matrixMAIN.ETC.Cycle(matrixMAIN)
-    matrixMAIN.CAC.Cycle(matrixMAIN)
-    time.sleep(.01)
 
 
