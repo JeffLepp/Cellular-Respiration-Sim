@@ -13,38 +13,619 @@ Cycle Completed: Matrix H+: 754, IMS H+: 10084, ATP: 22, ΔΨ: 0.13078
 Cycle Completed: Matrix H+: 746, IMS H+: 10091, ATP: 23, ΔΨ: 0.13108
 Cycle Completed: Matrix H+: 738, IMS H+: 10098, ATP: 24, ΔΨ: 0.13139
 Cycle Completed: Matrix H+: 730, IMS H+: 10105, ATP: 25, ΔΨ: 0.1317
-Cycle Completed: Matrix H+: 722, IMS H+: 10112, ATP: 26, ΔΨ: 0.13201
-Cycle Completed: Matrix H+: 714, IMS H+: 10119, ATP: 27, ΔΨ: 0.13233
-Cycle Completed: Matrix H+: 706, IMS H+: 10126, ATP: 28, ΔΨ: 0.13265
-Cycle Completed: Matrix H+: 698, IMS H+: 10133, ATP: 29, ΔΨ: 0.13297
-Cycle Completed: Matrix H+: 690, IMS H+: 10140, ATP: 30, ΔΨ: 0.1333
-Cycle Completed: Matrix H+: 682, IMS H+: 10147, ATP: 31, ΔΨ: 0.13363
-Cycle Completed: Matrix H+: 674, IMS H+: 10154, ATP: 32, ΔΨ: 0.13396
-Cycle Completed: Matrix H+: 666, IMS H+: 10161, ATP: 33, ΔΨ: 0.1343
-Cycle Completed: Matrix H+: 658, IMS H+: 10168, ATP: 34, ΔΨ: 0.13464
-Cycle Completed: Matrix H+: 650, IMS H+: 10175, ATP: 35, ΔΨ: 0.13499
-Cycle Completed: Matrix H+: 642, IMS H+: 10182, ATP: 36, ΔΨ: 0.13533
-Cycle Completed: Matrix H+: 634, IMS H+: 10189, ATP: 37, ΔΨ: 0.13569
-Cycle Completed: Matrix H+: 626, IMS H+: 10196, ATP: 38, ΔΨ: 0.13605
-Cycle Completed: Matrix H+: 618, IMS H+: 10203, ATP: 39, ΔΨ: 0.13641
-Cycle Completed: Matrix H+: 610, IMS H+: 10210, ATP: 40, ΔΨ: 0.13677
-Cycle Completed: Matrix H+: 602, IMS H+: 10217, ATP: 41, ΔΨ: 0.13714
-Cycle Completed: Matrix H+: 594, IMS H+: 10224, ATP: 42, ΔΨ: 0.13752
-Cycle Completed: Matrix H+: 586, IMS H+: 10231, ATP: 43, ΔΨ: 0.1379
-Cycle Completed: Matrix H+: 578, IMS H+: 10238, ATP: 44, ΔΨ: 0.13829
-Cycle Completed: Matrix H+: 570, IMS H+: 10245, ATP: 45, ΔΨ: 0.13868
-Cycle Completed: Matrix H+: 562, IMS H+: 10252, ATP: 46, ΔΨ: 0.13907
-Cycle Completed: Matrix H+: 554, IMS H+: 10259, ATP: 47, ΔΨ: 0.13947
-Cycle Completed: Matrix H+: 546, IMS H+: 10266, ATP: 48, ΔΨ: 0.13988
-Cycle Completed: Matrix H+: 538, IMS H+: 10273, ATP: 49, ΔΨ: 0.14029
-Cycle Completed: Matrix H+: 530, IMS H+: 10280, ATP: 50, ΔΨ: 0.14071
-Cycle Completed: Matrix H+: 522, IMS H+: 10287, ATP: 51, ΔΨ: 0.14114
-Cycle Completed: Matrix H+: 514, IMS H+: 10294, ATP: 52, ΔΨ: 0.14157
-Cycle Completed: Matrix H+: 506, IMS H+: 10301, ATP: 53, ΔΨ: 0.142
-Cycle Completed: Matrix H+: 498, IMS H+: 10308, ATP: 54, ΔΨ: 0.14245
-Cycle Completed: Matrix H+: 490, IMS H+: 10315, ATP: 55, ΔΨ: 0.1429
-Cycle Completed: Matrix H+: 482, IMS H+: 10322, ATP: 56, ΔΨ: 0.14336
-Cycle Completed: Matrix H+: 474, IMS H+: 10329, ATP: 57, ΔΨ: 0.14382
-Cycle Completed: Matrix H+: 466, IMS H+: 10336, ATP: 58, ΔΨ: 0.14429
-Cycle Completed: Matrix H+: 458, IMS H+: 10343, ATP: 59, ΔΨ: 0.14478
-Cycle Completed: Matrix H+: 450, IMS H+: 10350, ATP: 60, ΔΨ: 0.14526
+Cycle Completed: Matrix H+: 722, IMS H+: 10112, ATP: 25, ΔΨ: 0.13201
+Cycle Completed: Matrix H+: 714, IMS H+: 10119, ATP: 25, ΔΨ: 0.13233
+Cycle Completed: Matrix H+: 706, IMS H+: 10126, ATP: 25, ΔΨ: 0.13265
+Cycle Completed: Matrix H+: 698, IMS H+: 10133, ATP: 25, ΔΨ: 0.13297
+Cycle Completed: Matrix H+: 690, IMS H+: 10140, ATP: 25, ΔΨ: 0.1333
+Cycle Completed: Matrix H+: 682, IMS H+: 10147, ATP: 25, ΔΨ: 0.13363
+Cycle Completed: Matrix H+: 674, IMS H+: 10154, ATP: 25, ΔΨ: 0.13396
+Cycle Completed: Matrix H+: 666, IMS H+: 10161, ATP: 25, ΔΨ: 0.1343
+Cycle Completed: Matrix H+: 658, IMS H+: 10168, ATP: 25, ΔΨ: 0.13464
+Cycle Completed: Matrix H+: 650, IMS H+: 10175, ATP: 25, ΔΨ: 0.13499
+Cycle Completed: Matrix H+: 642, IMS H+: 10182, ATP: 25, ΔΨ: 0.13533
+Cycle Completed: Matrix H+: 634, IMS H+: 10189, ATP: 25, ΔΨ: 0.13569
+Cycle Completed: Matrix H+: 626, IMS H+: 10196, ATP: 25, ΔΨ: 0.13605
+Cycle Completed: Matrix H+: 618, IMS H+: 10203, ATP: 25, ΔΨ: 0.13641
+Cycle Completed: Matrix H+: 610, IMS H+: 10210, ATP: 25, ΔΨ: 0.13677
+Cycle Completed: Matrix H+: 602, IMS H+: 10217, ATP: 25, ΔΨ: 0.13714
+Cycle Completed: Matrix H+: 594, IMS H+: 10224, ATP: 25, ΔΨ: 0.13752
+Cycle Completed: Matrix H+: 586, IMS H+: 10231, ATP: 25, ΔΨ: 0.1379
+Cycle Completed: Matrix H+: 578, IMS H+: 10238, ATP: 25, ΔΨ: 0.13829
+Cycle Completed: Matrix H+: 570, IMS H+: 10245, ATP: 25, ΔΨ: 0.13868
+Cycle Completed: Matrix H+: 562, IMS H+: 10252, ATP: 25, ΔΨ: 0.13907
+Cycle Completed: Matrix H+: 554, IMS H+: 10259, ATP: 25, ΔΨ: 0.13947
+Cycle Completed: Matrix H+: 546, IMS H+: 10266, ATP: 25, ΔΨ: 0.13988
+Cycle Completed: Matrix H+: 538, IMS H+: 10273, ATP: 25, ΔΨ: 0.14029
+Cycle Completed: Matrix H+: 530, IMS H+: 10280, ATP: 25, ΔΨ: 0.14071
+Cycle Completed: Matrix H+: 522, IMS H+: 10287, ATP: 25, ΔΨ: 0.14114
+Cycle Completed: Matrix H+: 514, IMS H+: 10294, ATP: 25, ΔΨ: 0.14157
+Cycle Completed: Matrix H+: 506, IMS H+: 10301, ATP: 25, ΔΨ: 0.142
+Cycle Completed: Matrix H+: 498, IMS H+: 10308, ATP: 25, ΔΨ: 0.14245
+Cycle Completed: Matrix H+: 490, IMS H+: 10315, ATP: 25, ΔΨ: 0.1429
+Cycle Completed: Matrix H+: 482, IMS H+: 10322, ATP: 25, ΔΨ: 0.14336
+Cycle Completed: Matrix H+: 474, IMS H+: 10329, ATP: 25, ΔΨ: 0.14382
+Cycle Completed: Matrix H+: 466, IMS H+: 10336, ATP: 25, ΔΨ: 0.14429
+Cycle Completed: Matrix H+: 458, IMS H+: 10343, ATP: 25, ΔΨ: 0.14478
+Cycle Completed: Matrix H+: 450, IMS H+: 10350, ATP: 25, ΔΨ: 0.14526
+Cycle Completed: Matrix H+: 442, IMS H+: 10357, ATP: 25, ΔΨ: 0.14576
+Cycle Completed: Matrix H+: 434, IMS H+: 10364, ATP: 25, ΔΨ: 0.14627
+Cycle Completed: Matrix H+: 426, IMS H+: 10371, ATP: 25, ΔΨ: 0.14678
+Cycle Completed: Matrix H+: 418, IMS H+: 10378, ATP: 25, ΔΨ: 0.14731
+Cycle Completed: Matrix H+: 410, IMS H+: 10385, ATP: 25, ΔΨ: 0.14784
+Cycle Completed: Matrix H+: 402, IMS H+: 10392, ATP: 25, ΔΨ: 0.14839
+Cycle Completed: Matrix H+: 394, IMS H+: 10399, ATP: 25, ΔΨ: 0.14894
+Cycle Completed: Matrix H+: 386, IMS H+: 10406, ATP: 25, ΔΨ: 0.14951
+Cycle Completed: Matrix H+: 378, IMS H+: 10413, ATP: 25, ΔΨ: 0.15008
+Cycle Completed: Matrix H+: 370, IMS H+: 10420, ATP: 25, ΔΨ: 0.15067
+Cycle Completed: Matrix H+: 362, IMS H+: 10427, ATP: 25, ΔΨ: 0.15127
+Cycle Completed: Matrix H+: 354, IMS H+: 10434, ATP: 25, ΔΨ: 0.15189
+Cycle Completed: Matrix H+: 346, IMS H+: 10441, ATP: 25, ΔΨ: 0.15252
+Cycle Completed: Matrix H+: 338, IMS H+: 10448, ATP: 25, ΔΨ: 0.15316
+Cycle Completed: Matrix H+: 330, IMS H+: 10455, ATP: 25, ΔΨ: 0.15382
+Cycle Completed: Matrix H+: 322, IMS H+: 10462, ATP: 25, ΔΨ: 0.15449
+Cycle Completed: Matrix H+: 314, IMS H+: 10469, ATP: 25, ΔΨ: 0.15518
+Cycle Completed: Matrix H+: 306, IMS H+: 10476, ATP: 25, ΔΨ: 0.15589
+Cycle Completed: Matrix H+: 298, IMS H+: 10483, ATP: 25, ΔΨ: 0.15661
+Cycle Completed: Matrix H+: 290, IMS H+: 10490, ATP: 25, ΔΨ: 0.15736
+Cycle Completed: Matrix H+: 282, IMS H+: 10497, ATP: 25, ΔΨ: 0.15812
+Cycle Completed: Matrix H+: 274, IMS H+: 10504, ATP: 25, ΔΨ: 0.15891
+Cycle Completed: Matrix H+: 266, IMS H+: 10511, ATP: 25, ΔΨ: 0.15972
+Cycle Completed: Matrix H+: 258, IMS H+: 10518, ATP: 25, ΔΨ: 0.16055
+Cycle Completed: Matrix H+: 250, IMS H+: 10525, ATP: 25, ΔΨ: 0.16141
+Cycle Completed: Matrix H+: 242, IMS H+: 10532, ATP: 25, ΔΨ: 0.1623
+Cycle Completed: Matrix H+: 234, IMS H+: 10539, ATP: 25, ΔΨ: 0.16322
+Cycle Completed: Matrix H+: 226, IMS H+: 10546, ATP: 25, ΔΨ: 0.16416
+Cycle Completed: Matrix H+: 218, IMS H+: 10553, ATP: 25, ΔΨ: 0.16514
+Cycle Completed: Matrix H+: 210, IMS H+: 10560, ATP: 25, ΔΨ: 0.16616
+Cycle Completed: Matrix H+: 202, IMS H+: 10567, ATP: 25, ΔΨ: 0.16721
+Cycle Completed: Matrix H+: 194, IMS H+: 10574, ATP: 25, ΔΨ: 0.16831
+Cycle Completed: Matrix H+: 186, IMS H+: 10581, ATP: 25, ΔΨ: 0.16945
+Cycle Completed: Matrix H+: 178, IMS H+: 10588, ATP: 25, ΔΨ: 0.17065
+Cycle Completed: Matrix H+: 170, IMS H+: 10595, ATP: 25, ΔΨ: 0.17189
+Cycle Completed: Matrix H+: 162, IMS H+: 10602, ATP: 25, ΔΨ: 0.1732
+Cycle Completed: Matrix H+: 154, IMS H+: 10609, ATP: 25, ΔΨ: 0.17457
+Cycle Completed: Matrix H+: 146, IMS H+: 10616, ATP: 25, ΔΨ: 0.17601
+Cycle Completed: Matrix H+: 138, IMS H+: 10623, ATP: 25, ΔΨ: 0.17753
+Cycle Completed: Matrix H+: 130, IMS H+: 10630, ATP: 25, ΔΨ: 0.17915
+Cycle Completed: Matrix H+: 122, IMS H+: 10637, ATP: 25, ΔΨ: 0.18086
+Cycle Completed: Matrix H+: 114, IMS H+: 10644, ATP: 25, ΔΨ: 0.18269
+Cycle Completed: Matrix H+: 106, IMS H+: 10651, ATP: 25, ΔΨ: 0.18465
+Cycle Completed: Matrix H+: 98, IMS H+: 10658, ATP: 25, ΔΨ: 0.18676
+Cycle Completed: Matrix H+: 90, IMS H+: 10665, ATP: 25, ΔΨ: 0.18906
+Cycle Completed: Matrix H+: 82, IMS H+: 10672, ATP: 25, ΔΨ: 0.19156
+Cycle Completed: Matrix H+: 74, IMS H+: 10679, ATP: 25, ΔΨ: 0.19432
+Cycle Completed: Matrix H+: 66, IMS H+: 10686, ATP: 25, ΔΨ: 0.19739
+Cycle Completed: Matrix H+: 58, IMS H+: 10693, ATP: 25, ΔΨ: 0.20086
+Cycle Completed: Matrix H+: 50, IMS H+: 10700, ATP: 25, ΔΨ: 0.20485
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 45, IMS H+: 10708, ATP: 24, ΔΨ: 0.20768
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 40, IMS H+: 10716, ATP: 24, ΔΨ: 0.21085
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 35, IMS H+: 10724, ATP: 24, ΔΨ: 0.21443
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 30, IMS H+: 10732, ATP: 24, ΔΨ: 0.21857
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10740, ATP: 24, ΔΨ: 0.22346
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10740, ATP: 24, ΔΨ: 0.22043
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10744, ATP: 24, ΔΨ: 0.22141
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10748, ATP: 24, ΔΨ: 0.22243
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10752, ATP: 24, ΔΨ: 0.22349
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10752, ATP: 24, ΔΨ: 0.22046
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10756, ATP: 24, ΔΨ: 0.22144
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10760, ATP: 24, ΔΨ: 0.22246
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10764, ATP: 24, ΔΨ: 0.22352
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10764, ATP: 24, ΔΨ: 0.22049
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10768, ATP: 24, ΔΨ: 0.22147
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10772, ATP: 24, ΔΨ: 0.22249
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10776, ATP: 24, ΔΨ: 0.22355
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10776, ATP: 24, ΔΨ: 0.22052
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10780, ATP: 24, ΔΨ: 0.2215
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10784, ATP: 24, ΔΨ: 0.22252
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10788, ATP: 24, ΔΨ: 0.22358
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10788, ATP: 24, ΔΨ: 0.22055
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10792, ATP: 24, ΔΨ: 0.22153
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10796, ATP: 24, ΔΨ: 0.22255
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10800, ATP: 24, ΔΨ: 0.22361
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10800, ATP: 24, ΔΨ: 0.22058
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10804, ATP: 24, ΔΨ: 0.22156
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10808, ATP: 24, ΔΨ: 0.22258
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10812, ATP: 24, ΔΨ: 0.22364
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10812, ATP: 24, ΔΨ: 0.22061
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10816, ATP: 24, ΔΨ: 0.22159
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10820, ATP: 24, ΔΨ: 0.22261
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10824, ATP: 24, ΔΨ: 0.22367
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10824, ATP: 24, ΔΨ: 0.22064
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10828, ATP: 24, ΔΨ: 0.22162
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10832, ATP: 24, ΔΨ: 0.22264
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10836, ATP: 24, ΔΨ: 0.2237
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10836, ATP: 24, ΔΨ: 0.22067
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10840, ATP: 24, ΔΨ: 0.22165
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10844, ATP: 24, ΔΨ: 0.22267
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10848, ATP: 24, ΔΨ: 0.22373
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10848, ATP: 24, ΔΨ: 0.2207
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10852, ATP: 24, ΔΨ: 0.22168
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10856, ATP: 24, ΔΨ: 0.2227
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10860, ATP: 24, ΔΨ: 0.22376
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10860, ATP: 24, ΔΨ: 0.22073
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10864, ATP: 24, ΔΨ: 0.22171
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10868, ATP: 24, ΔΨ: 0.22273
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10872, ATP: 24, ΔΨ: 0.22379
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10872, ATP: 24, ΔΨ: 0.22076
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10876, ATP: 24, ΔΨ: 0.22174
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10880, ATP: 24, ΔΨ: 0.22276
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10884, ATP: 24, ΔΨ: 0.22382
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10884, ATP: 24, ΔΨ: 0.22079
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10888, ATP: 24, ΔΨ: 0.22177
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10892, ATP: 24, ΔΨ: 0.22279
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10896, ATP: 24, ΔΨ: 0.22385
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10896, ATP: 24, ΔΨ: 0.22082
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10900, ATP: 24, ΔΨ: 0.2218
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10904, ATP: 24, ΔΨ: 0.22282
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10908, ATP: 24, ΔΨ: 0.22388
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10908, ATP: 24, ΔΨ: 0.22085
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10912, ATP: 24, ΔΨ: 0.22183
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10916, ATP: 24, ΔΨ: 0.22285
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10920, ATP: 24, ΔΨ: 0.2239
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10920, ATP: 24, ΔΨ: 0.22088
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10924, ATP: 24, ΔΨ: 0.22186
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10928, ATP: 24, ΔΨ: 0.22288
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10932, ATP: 24, ΔΨ: 0.22393
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10932, ATP: 24, ΔΨ: 0.22091
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10936, ATP: 24, ΔΨ: 0.22189
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10940, ATP: 24, ΔΨ: 0.22291
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 25, IMS H+: 10944, ATP: 24, ΔΨ: 0.22396
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10944, ATP: 24, ΔΨ: 0.22094
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10948, ATP: 24, ΔΨ: 0.22192
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10952, ATP: 24, ΔΨ: 0.22293
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 29, IMS H+: 10952, ATP: 24, ΔΨ: 0.22002
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10956, ATP: 24, ΔΨ: 0.22097
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10960, ATP: 24, ΔΨ: 0.22195
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10964, ATP: 24, ΔΨ: 0.22296
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 29, IMS H+: 10964, ATP: 24, ΔΨ: 0.22005
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10968, ATP: 24, ΔΨ: 0.22099
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10972, ATP: 24, ΔΨ: 0.22198
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10976, ATP: 24, ΔΨ: 0.22299
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 29, IMS H+: 10976, ATP: 24, ΔΨ: 0.22008
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10980, ATP: 24, ΔΨ: 0.22102
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10984, ATP: 24, ΔΨ: 0.222
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 10988, ATP: 24, ΔΨ: 0.22302
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 29, IMS H+: 10988, ATP: 24, ΔΨ: 0.22011
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 10992, ATP: 24, ΔΨ: 0.22105
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 10996, ATP: 24, ΔΨ: 0.22203
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 11000, ATP: 24, ΔΨ: 0.22305
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 29, IMS H+: 11000, ATP: 24, ΔΨ: 0.22013
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 28, IMS H+: 11004, ATP: 24, ΔΨ: 0.22108
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 27, IMS H+: 11008, ATP: 24, ΔΨ: 0.22206
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 26, IMS H+: 11012, ATP: 24, ΔΨ: 0.22308
+Complex III Error: Out of protons!
+Complex III Error: No cytochromeC!
+Complex IV Error: No cytochrome_Fe2
+Complex IV Error: No free O2
+ATP Synthase Error: Differential or ADP absent
+Cycle Completed: Matrix H+: 29, IMS H+: 11012, ATP: 24, ΔΨ: 0.22016
