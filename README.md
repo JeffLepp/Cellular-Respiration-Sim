@@ -8,3 +8,5 @@ This project simulates core metabolic processes inside a eukaryotic cell, includ
 - **ATP production & export to cytoplasm**
 
 It models molecule transformations, energy transfers, and redox reactions using Python classes and logs all major activity through a modular logging system.
+
+Open in VsCode or another IDE and run from cytoplasm.py
