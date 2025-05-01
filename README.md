@@ -9,4 +9,4 @@ This project simulates core metabolic processes inside a eukaryotic cell, includ
 
 It models molecule transformations, energy transfers, and redox reactions using Python classes and logs all major activity through a modular logging system.
 
-Open in VsCode or another IDE and run from cytoplasm.py
+Open in VsCode or another IDE and run from cytoplasm.py in the MET3.0 folder.
