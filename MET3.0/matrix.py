@@ -56,7 +56,7 @@ class matrixState():
 '''
 These classes correspond to the citric acid cycles, provides NADH and FADH2 in exchange for pyruvate.
 '''
-# Basic enzymes for mitochondiral matrix
+# Stores enzymes for mitochondiral matrix
 class ClassMatrixEnzymes():
     def __init__(self, matrix):
         self.matrix = matrix
@@ -67,10 +67,10 @@ class ClassMatrixEnzymes():
             self.matrix.NAD -= 1
             self.matrix.acetylCoA += 1
             self.matrix.CO2 += 1
-            self.matrix.NAD += 1
+            self.matrix.NADH += 1
 
     def citrate_synthase(self):
-        if (self.matrix.acetylCoA >= 1 & self.matrix.oxaloacetate >= 1):
+        if (self.matrix.acetylCoA >= 1 and self.matrix.oxaloacetate >= 1):
             self.matrix.acetylCoA -= 1
             self.matrix.oxaloacetate -= 1
             self.matrix.citrate += 1
@@ -81,7 +81,10 @@ class ClassMatrixEnzymes():
             self.matrix.isocitrate += 1
 
     def isocitrate_dehydrogenase(self):
-        if (self.matrix.isocitrate >=1):
+        if (self.matrix.isocitrate >=1 and self.matrix.NAD >= 1):
+            self.matrix.NAD -= 1
+            self.matrix.NADH += 1
+            self.matrix.CO2 += 1
             self.matrix.isocitrate -= 1
             self.matrix.αKetoglutarate += 1
     
@@ -101,7 +104,7 @@ class ClassMatrixEnzymes():
             self.matrix.GTP += 1
 
     def succinate_dehydrogenase(self):
-        if (self.matrix.succinate >= 1 and self.matrix.FADH2 >= 1):
+        if (self.matrix.succinate >= 1 and self.matrix.FAD >= 1):
             self.matrix.succinate -= 1
             self.matrix.fumarate += 1
             self.matrix.FAD -= 1
@@ -113,8 +116,9 @@ class ClassMatrixEnzymes():
             self.matrix.malate += 1
 
     def malate_dehydrogenase(self):
-        if (self.matrix.malate >= 1):
+        if (self.matrix.malate >= 1 and self.matrix.NAD >= 1):
             self.matrix.malate -= 1
+            self.matrix.NAD -= 1
             self.matrix.oxaloacetate += 1
             self.matrix.NADH += 1
 

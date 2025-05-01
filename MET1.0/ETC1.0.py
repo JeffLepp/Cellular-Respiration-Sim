@@ -1,5 +1,8 @@
 import math
 
+# THIS IS AN OLD VERSION
+print("Running old file")
+
 # Includes Electron Carrying molecules, isolated complexes, proton count between IMS and Matrix, 
 class calculateETC():
     def __init__(self, parent):

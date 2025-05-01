@@ -2,6 +2,10 @@ import logging
 import subprocess
 import sys
 
+# THIS IS A OLD FILE
+print("Running old file")
+
+
 # Regular logger
 log_filename = "simulation.log"
 logger = logging.getLogger("ETC")
