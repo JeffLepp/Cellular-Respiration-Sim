@@ -1,7 +1,5 @@
 import math
-from logger_config import logger, molecule_logger, CAC_logger
-
-
+from logger_config import logger, molecule_logger, CAC_logger, GLY_logger
 
 '''
 These classes represent the matrix, including structures and relevent molecules
@@ -126,7 +124,7 @@ class ClassCAC():
     def __init__(self, matrix):
         self.matrix = matrix
 
-    def Cycle(self, matrix):
+    def Cycle(self):
         # (3C) Pyruvate + NAD → CO2 + (2C) Acetyl-CoA + NADH
         self.matrix.mEnzymes.pyruvate_dehydrogenase()
 
@@ -154,7 +152,7 @@ class ClassCAC():
         # (4C) Malate → (4C) Oxaloacetate + NADH
         self.matrix.mEnzymes.malate_dehydrogenase()
 
-        self.exportStatus(matrix)
+        self.exportStatus(self.matrix)
 
     def exportStatus(self, matrix):
         status = (
@@ -306,14 +304,14 @@ class ClassETC():
         molecule_logger.info(status)
 
     # Cycle through the ETC
-    def Cycle(self, matrix):
-        self.ComplexI(matrix)
-        self.ComplexII(matrix)
-        self.ComplexIII(matrix)
-        self.ComplexIV(matrix)
-        self.ATPSynthase(matrix)
-        self.exportStatus(matrix)
-        logger.info(f"Cycle Completed: Matrix H+: {matrix.protonsM}, IMS H+: {matrix.protonsIM}, ATP: {matrix.ATP}, ΔΨ: {round(matrix.calc.protonDifferential() , 5)}")
+    def Cycle(self):
+        self.ComplexI(self.matrix)
+        self.ComplexII(self.matrix)
+        self.ComplexIII(self.matrix)
+        self.ComplexIV(self.matrix)
+        self.ATPSynthase(self.matrix)
+        self.exportStatus(self.matrix)
+        logger.info(f"Cycle Completed: Matrix H+: {self.matrix.protonsM}, IMS H+: {self.matrix.protonsIM}, ATP: {self.matrix.ATP}, ΔΨ: {round(self.matrix.calc.protonDifferential() , 5)}")
 
 
 

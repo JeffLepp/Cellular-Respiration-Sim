@@ -29,14 +29,25 @@ if not CAC_logger.handlers:
     cac_file_handler = logging.FileHandler(cac_log_filename)
     CAC_logger.addHandler(cac_file_handler)
 
+# NEW: Glycolysis logger --------------------------------------------
+gly_log_filename = "gly.log"
+GLY_logger = logging.getLogger("GLYLogger")
+
+if not GLY_logger.handlers:
+    GLY_logger.setLevel(logging.DEBUG)
+    gly_file_handler = logging.FileHandler(gly_log_filename)
+    GLY_logger.addHandler(gly_file_handler)
+
 # Launch terminals
 if sys.platform.startswith('linux'):
     subprocess.Popen(["gnome-terminal", "--title=ETC Monitoring Viewer", "--", "tail", "-f", log_filename])
-    #subprocess.Popen(["x-terminal-emulator", "-e", f"tail -f {log_filename}"])
     subprocess.Popen(["gnome-terminal", "--title=Matrix Molecule Stock Viewer", "--", "tail", "-f", molecule_log_filename])
     subprocess.Popen(["gnome-terminal", "--title=TCA Molecule Stock Viewer", "--", "tail", "-f", cac_log_filename])
+    subprocess.Popen(["gnome-terminal", "--title=Glycolysis Molecule Stock Viewer", "--", "tail", "-f", gly_log_filename])
 
 
 open(molecule_log_filename, 'w').close()  # Clears old content
 open(cac_log_filename, 'w').close()  # Clears old content
 open(log_filename, 'w').close()  # Clears old content
+open(gly_log_filename, 'w').close()  # Clears old content
+
