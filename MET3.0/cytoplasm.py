@@ -1,4 +1,3 @@
-# TODO: transfer M.ATP to C.ATP
 # TODO: self regulate rate of metabolism
 # TODO: GTP exporting/ -> atp
 #       based on available ATP GTP?

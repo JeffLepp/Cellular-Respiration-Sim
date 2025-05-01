@@ -4,7 +4,7 @@ from logger_config import logger, molecule_logger, CAC_logger, GLY_logger
 '''
 These classes represent the matrix, including structures and relevent molecules
 '''
-# Stores all molecules in matrix
+# Stores all molecules in matrix (M), and Intermembrane space (IM)
 class matrixState():
 
     def __init__(self):
@@ -122,7 +122,7 @@ class ClassMatrixEnzymes():
             self.matrix.oxaloacetate += 1
             self.matrix.NADH += 1
 
-# Citric acid cycle
+# The citric acid cycle (CAC)
 class ClassCAC():
 
     def __init__(self, matrix):
@@ -197,7 +197,7 @@ class calculateETC():
         deltaPSI = (R * T / F) * math.log(protonsIM / protonsM)
         return deltaPSI
 
-# Electron Transport Chain
+# Electron Transport Chain (ETC)
 class ClassETC():
 
     def __init__(self, matrix):
