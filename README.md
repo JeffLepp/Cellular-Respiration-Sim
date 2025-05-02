@@ -1,5 +1,8 @@
 # 🧬 Cell Metabolism Simulator
 
+Open in VsCode or another IDE and run from cytoplasm.py in the MET3.0 folder. 
+Consoles made to log state of cell are made for linux. Running on other OS' cause unhelpful terminal outputs. 
+
 This project simulates core metabolic processes inside a eukaryotic cell, including:
 
 - **Glycolysis**
@@ -9,4 +12,4 @@ This project simulates core metabolic processes inside a eukaryotic cell, includ
 
 It models molecule transformations, energy transfers, and redox reactions using Python classes and logs all major activity through a modular logging system.
 
-Open in VsCode or another IDE and run from cytoplasm.py in the MET3.0 folder.
+
