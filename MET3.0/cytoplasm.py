@@ -54,7 +54,6 @@ class mitochondriaClass():
             self.cell.ATP += 1
 
 
-
 '''
 These classes correspond to Glyolysis in the cytoplasm
 '''
@@ -164,4 +163,4 @@ for i in range(500):
     cellMain.glycolysis.Cycle()
     cellMain.mitochondria.exportATP()
     cellMain.glycolysis.exportGlycolysisStatus()
-    time.sleep(.1)
+    time.sleep(.2)

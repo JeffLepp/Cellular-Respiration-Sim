@@ -49,11 +49,18 @@ class matrixState():
         self.cytochromeC_Fe2 = 1
 
         # Common Molecules
-        self.O2 = 100
+        self.O2 = 150
         self.H2O = 100
         self.CO2 = 100
 
-
+    # Tracks number of specific molecules in matrix
+    def exportStatus(self, matrix):
+        status = (
+            f"NADH:{matrix.NADH} | NAD:{matrix.NAD} | FADH2:{matrix.FADH2} | FAD:{matrix.FAD} | "
+            f"ADP:{matrix.ADP} | ATP:{matrix.ATP} | "
+            f"O2:{matrix.O2} | H2O:{matrix.H2O}"
+        )
+        molecule_logger.info(status)
 
 '''
 These classes correspond to the citric acid cycles, provides NADH and FADH2 in exchange for pyruvate.
@@ -295,6 +302,8 @@ class ClassETC():
 
     # Uses proton differential to drive 3 H+ into matrix and use ocidative phosphylation to make ADP -> ATP (Note: moving protons = electricity!)
     def ATPSynthase(self, matrix):
+        if (matrix.calc.protonDifferential == None):
+            logger.error("No H+ in matrix or IMS")
 
         if (matrix.calc.protonDifferential() > .12) and matrix.ADP >= 1:
             matrix.protonsM += 3
@@ -305,15 +314,6 @@ class ClassETC():
             logger.error("ATP Synthase Error: Differential or ADP absent")
 
         # Correlates to console output
-    
-    # Tracks number of specific molecules in matrix for CAC
-    def exportStatus(self, matrix):
-        status = (
-            f"NADH:{matrix.NADH} | NAD:{matrix.NAD} | FADH2:{matrix.FADH2} | FAD:{matrix.FAD} | "
-            f"ADP:{matrix.ADP} | ATP:{matrix.ATP} | "
-            f"O2:{matrix.O2} | H2O:{matrix.H2O}"
-        )
-        molecule_logger.info(status)
 
     # Cycle through the ETC
     def Cycle(self):
@@ -322,7 +322,7 @@ class ClassETC():
         self.ComplexIII(self.matrix)
         self.ComplexIV(self.matrix)
         self.ATPSynthase(self.matrix)
-        self.exportStatus(self.matrix)
+        self.matrix.exportStatus(self.matrix)
         logger.info(f"Cycle Completed: Matrix H+: {self.matrix.protonsM}, IMS H+: {self.matrix.protonsIM}, ATP: {self.matrix.ATP}, ΔΨ: {round(self.matrix.calc.protonDifferential() , 5)}")
 
 
