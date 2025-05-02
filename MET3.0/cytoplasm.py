@@ -86,7 +86,7 @@ class ClassGlycolysisEnzymes():
         if (self.cell.fructose_1_6_biphosphate >= 1):
             self.cell.fructose_1_6_biphosphate -= 1
             self.cell.dihydroxyl_acetone_phosphate += 1
-            self.cell.glyceraldehyde_3_phosphate += 1
+            self.cell.glyceraldehyde_3_phosphate += 2
 
     def triose_phosphate_isomerase(self, cell):
         if (self.cell.dihydroxyl_acetone_phosphate >= 1):
@@ -120,7 +120,7 @@ class ClassGlycolysisEnzymes():
             self.cell.phospho_enol_pyruvate += 1
 
     def pyruvate_kinase(self, cell):
-        if (self.cell.phospho_enol_pyruvate >= 1 & self.cell.ADP >= 1):
+        if (self.cell.phospho_enol_pyruvate >= 1 and self.cell.ADP >= 1):
             self.cell.phospho_enol_pyruvate -= 1
             self.cell.ADP -= 1
             self.cell.pyruvate += 1
