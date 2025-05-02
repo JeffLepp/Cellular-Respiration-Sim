@@ -24,6 +24,8 @@ class matrixState():
         self.succinate = 100        # 4 Carbon
         self.fumarate = 100         # 4 Carbon
         self.malate = 100           # 4 Carbon
+        self.Coa_SH = 100          # Coenzyme A
+
 
         # Electron Carriers
         self.FADH2 = 100
@@ -68,6 +70,8 @@ class ClassMatrixEnzymes():
             self.matrix.acetylCoA += 1
             self.matrix.CO2 += 1
             self.matrix.NADH += 1
+            self.matrix.protonsM += 1
+            self.matrix.Coa_SH -= 1
 
     def citrate_synthase(self):
         if (self.matrix.acetylCoA >= 1 and self.matrix.oxaloacetate >= 1):
@@ -97,11 +101,16 @@ class ClassMatrixEnzymes():
             self.matrix.NADH += 1
 
     def succinylCoA_synthetase(self):
-        if (self.matrix.succinylCoA >= 1 and self.matrix.GDP >= 1):
+        if (self.matrix.succinylCoA >= 1 and ((self.matrix.GDP >=1) or (self.matrix.ADP >= 1))):
             self.matrix.succinylCoA -= 1
             self.matrix.succinate += 1
-            self.matrix.GDP -= 1
-            self.matrix.GTP += 1
+            if (self.matrix.GDP >= 1):
+                self.matrix.GDP -= 1
+                self.matrix.GTP += 1
+            elif (self.matrix.ADP >= 1):
+                self.matrix.ADP -= 1
+                self.matrix.ATP += 1
+            
 
     def succinate_dehydrogenase(self):
         if (self.matrix.succinate >= 1 and self.matrix.FAD >= 1):
@@ -129,7 +138,7 @@ class ClassCAC():
         self.matrix = matrix
 
     def Cycle(self):
-        # (3C) Pyruvate + NAD → CO2 + (2C) Acetyl-CoA + NADH
+        # (3C) Pyruvate + NAD + Coa-SH → CO2 + (2C) Acetyl-CoA + NADH + H
         self.matrix.mEnzymes.pyruvate_dehydrogenase()
 
         # (2C) Acetyl-CoA + (4C) Oxaloacetate → (6C) Citrate
@@ -225,11 +234,10 @@ class ClassETC():
     # Complex II donates FADH2, pumps 0H+
     def ComplexII(self, matrix):
         
-        # Pass a FADH2 and releases 2H+, pumps 0 protons
+        # Pass a FADH2 and releases 2H+, pumps 0 protons, 2H+ taken by ubinquinone
         if (matrix.FADH2 >= 1):
             matrix.FADH2 -= 1
             matrix.FAD += 1
-            matrix.protonsM += 2
         
         # Semiquinol uptakes 2e- and becomes Ubiquinol
         if (matrix.Semiquinone >= 1):
@@ -280,7 +288,7 @@ class ClassETC():
 
         if (matrix.O2 >= 1):
             matrix.O2 -= 1 # diatomic O2
-            matrix.protonsM -= 4
+            matrix.protonsM -= 2
             matrix.H2O += 2
         else:
             logger.error("Complex IV Error: No free O2")
