@@ -304,16 +304,15 @@ class ClassETC():
     def ATPSynthase(self, matrix):
         if (matrix.calc.protonDifferential == None):
             logger.error("No H+ in matrix or IMS")
-
-        if (matrix.calc.protonDifferential() > .12) and matrix.ADP >= 1:
-            matrix.protonsM += 3
-            matrix.protonsIM -= 3
-            matrix.ADP -= 1
-            matrix.ATP += 1
         else:
-            logger.error("ATP Synthase Error: Differential or ADP absent")
+            if (matrix.calc.protonDifferential() > .12 and matrix.ADP >= 1):
+                matrix.protonsM += 3
+                matrix.protonsIM -= 3
+                matrix.ADP -= 1
+                matrix.ATP += 1
+            else:
+                logger.error("ATP Synthase Error: Differential or ADP absent")
 
-        # Correlates to console output
 
     # Cycle through the ETC
     def Cycle(self):
