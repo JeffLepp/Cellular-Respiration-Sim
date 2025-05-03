@@ -1,5 +1,5 @@
 import math
-from logger_config import logger, molecule_logger, CAC_logger, GLY_logger
+from logger_config import logger, molecule_logger, CAC_logger, GLY_logger, CYT_logger
 
 '''
 These classes represent the matrix, including structures and relevent molecules

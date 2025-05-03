@@ -1,8 +1,10 @@
 # TODO: self regulate rate of metabolism
 # TODO: GTP exporting/ -> atp
 #       based on available ATP GTP?
+# Exporting NADH, pyruvate
+# mito matrix ANT translocase for ADP <-> ATP
 
-from matrix import matrixState, GLY_logger
+from matrix import matrixState, GLY_logger, CYT_logger
 import time
 
 
@@ -41,6 +43,15 @@ class cellState():
         self.phospho_2_glycerate = 100
         self.phospho_enol_pyruvate = 100
         self.pyruvate = 100
+
+    # Tracks number of specific molecules in matrix
+    def exportStatus(self):
+        status = (
+            f"NADH:{self.NADH} | NAD:{self.NAD} | "
+            f"ADP:{self.ADP} | ATP:{self.ATP} | "
+            f"O2:{self.O2} | H2O:{self.H2O}"
+        )
+        CYT_logger.info(status)
 
 # Represents a mitochondrion in the cytoplasm
 class mitochondriaClass():
@@ -163,4 +174,5 @@ for i in range(500):
     cellMain.glycolysis.Cycle()
     cellMain.mitochondria.exportATP()
     cellMain.glycolysis.exportGlycolysisStatus()
+    cellMain.exportStatus()
     time.sleep(.2)

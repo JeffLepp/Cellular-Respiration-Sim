@@ -3,16 +3,16 @@ import subprocess
 import sys
 
 # Regular logger ------------------------------------------------------------
-log_filename = "simulation.log"
+etc_log_filename = "ETC.log"
 logger = logging.getLogger("ETC")
 
 if not logger.handlers:
     logger.setLevel(logging.DEBUG)
-    file_handler = logging.FileHandler(log_filename)
+    file_handler = logging.FileHandler(etc_log_filename)
     logger.addHandler(file_handler)
 
 # Molecule logger ------------------------------------------------------------
-molecule_log_filename = "matrix_log.log"
+molecule_log_filename = "matrix.log"
 molecule_logger = logging.getLogger("MoleculeLogger")
 
 if not molecule_logger.handlers:
@@ -21,7 +21,7 @@ if not molecule_logger.handlers:
     molecule_logger.addHandler(molecule_file_handler)
 
 # CAC (Citric Acid Cycle) logger --------------------------------------------
-cac_log_filename = "TCA_log.log"
+cac_log_filename = "TCA.log"
 CAC_logger = logging.getLogger("CACLogger")
 
 if not CAC_logger.handlers:
@@ -30,7 +30,7 @@ if not CAC_logger.handlers:
     CAC_logger.addHandler(cac_file_handler)
 
 # Glycolysis logger --------------------------------------------
-gly_log_filename = "glycolysis_log.log"
+gly_log_filename = "glycolysis.log"
 GLY_logger = logging.getLogger("GLYLogger")
 
 if not GLY_logger.handlers:
@@ -42,14 +42,14 @@ if not GLY_logger.handlers:
 cyt_log_filename = "cytoplasm_log.log"
 CYT_logger = logging.getLogger("CYTLogger")
 
-if not GLY_logger.handlers:
+if not CYT_logger.handlers:
     CYT_logger.setLevel(logging.DEBUG)
     cyt_file_handler = logging.FileHandler(cyt_log_filename)
     CYT_logger.addHandler(cyt_file_handler)
 
 # Launch terminals
 if sys.platform.startswith('linux'):
-    subprocess.Popen(["gnome-terminal", "--title=ETC Event Log", "--", "tail", "-f", log_filename])
+    subprocess.Popen(["gnome-terminal", "--title=ETC Event Log", "--", "tail", "-f", etc_log_filename])
     subprocess.Popen(["gnome-terminal", "--title=Molecules in the matrix of cell", "--", "tail", "-f", molecule_log_filename])
     subprocess.Popen(["gnome-terminal", "--title=TCA-Related molecules", "--", "tail", "-f", cac_log_filename])
     subprocess.Popen(["gnome-terminal", "--title=Glycolysis-Related molecules", "--", "tail", "-f", gly_log_filename])
@@ -59,6 +59,8 @@ if sys.platform.startswith('linux'):
 
 open(molecule_log_filename, 'w').close()  # Clears old content
 open(cac_log_filename, 'w').close()  # Clears old content
-open(log_filename, 'w').close()  # Clears old content
+open(etc_log_filename, 'w').close()  # Clears old content
 open(gly_log_filename, 'w').close()  # Clears old content
+open(cyt_log_filename, 'w').close()  # Clears old content
+
 
