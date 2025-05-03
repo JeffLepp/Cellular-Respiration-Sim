@@ -1,9 +1,12 @@
+# TODO:
+# 1. Make Logger Cross-Platform (eg. os.path.join())
+
 import logging
 import subprocess
 import sys
 
 # Regular logger ------------------------------------------------------------
-etc_log_filename = "ETC.log"
+etc_log_filename = "MET3.0/Logs/ETC.log"
 logger = logging.getLogger("ETC")
 
 if not logger.handlers:
@@ -12,7 +15,7 @@ if not logger.handlers:
     logger.addHandler(file_handler)
 
 # Molecule logger ------------------------------------------------------------
-molecule_log_filename = "matrix.log"
+molecule_log_filename = "MET3.0/Logs/matrix.log"
 molecule_logger = logging.getLogger("MoleculeLogger")
 
 if not molecule_logger.handlers:
@@ -21,7 +24,7 @@ if not molecule_logger.handlers:
     molecule_logger.addHandler(molecule_file_handler)
 
 # CAC (Citric Acid Cycle) logger --------------------------------------------
-cac_log_filename = "TCA.log"
+cac_log_filename = "MET3.0/Logs/TCA.log"
 CAC_logger = logging.getLogger("CACLogger")
 
 if not CAC_logger.handlers:
@@ -30,7 +33,7 @@ if not CAC_logger.handlers:
     CAC_logger.addHandler(cac_file_handler)
 
 # Glycolysis logger --------------------------------------------
-gly_log_filename = "glycolysis.log"
+gly_log_filename = "MET3.0/Logs/glycolysis.log"
 GLY_logger = logging.getLogger("GLYLogger")
 
 if not GLY_logger.handlers:
@@ -39,7 +42,7 @@ if not GLY_logger.handlers:
     GLY_logger.addHandler(gly_file_handler)
 
 # Cytoplasm logger --------------------------------------------
-cyt_log_filename = "cytoplasm_log.log"
+cyt_log_filename = "MET3.0/Logs/cytoplasm.log"
 CYT_logger = logging.getLogger("CYTLogger")
 
 if not CYT_logger.handlers:
