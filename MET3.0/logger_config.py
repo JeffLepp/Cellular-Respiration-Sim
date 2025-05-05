@@ -50,6 +50,8 @@ if not CYT_logger.handlers:
     cyt_file_handler = logging.FileHandler(cyt_log_filename)
     CYT_logger.addHandler(cyt_file_handler)
 
+# Check if user wants terminals
+
 # Launch terminals
 if sys.platform.startswith('linux'):
     subprocess.Popen(["gnome-terminal", "--title=ETC Event Log", "--", "tail", "-f", etc_log_filename])
@@ -57,7 +59,6 @@ if sys.platform.startswith('linux'):
     subprocess.Popen(["gnome-terminal", "--title=TCA-Related molecules", "--", "tail", "-f", cac_log_filename])
     subprocess.Popen(["gnome-terminal", "--title=Glycolysis-Related molecules", "--", "tail", "-f", gly_log_filename])
     subprocess.Popen(["gnome-terminal", "--title=Molecules in the cytosol of cell", "--", "tail", "-f", cyt_log_filename])
-
 
 
 open(molecule_log_filename, 'w').close()  # Clears old content
