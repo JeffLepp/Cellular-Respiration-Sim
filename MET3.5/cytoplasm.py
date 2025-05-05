@@ -5,7 +5,7 @@
 # mito matrix ANT translocase for ADP <-> ATP
 
 from matrix import matrixState, GLY_logger, CYT_logger
-import time
+import asyncio
 
 
 '''
@@ -54,14 +54,12 @@ class cellState():
         CYT_logger.info(status)
 
     def cycle(self):
-        for i in range(500):
-            self.mitochondria.matrix.ETC.Cycle()
-            self.mitochondria.matrix.CAC.Cycle()
-            self.glycolysis.Cycle()
-            self.mitochondria.exportATP()
-            self.glycolysis.exportGlycolysisStatus()
-            self.exportStatus()
-            time.sleep(.2)
+        self.mitochondria.matrix.ETC.Cycle()
+        self.mitochondria.matrix.CAC.Cycle()
+        self.glycolysis.Cycle()
+        self.mitochondria.exportATP()
+        self.glycolysis.exportGlycolysisStatus()
+        self.exportStatus()
 
 # Represents a mitochondrion in the cytoplasm
 class mitochondriaClass():

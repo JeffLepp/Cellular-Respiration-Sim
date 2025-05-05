@@ -322,7 +322,7 @@ class ClassETC():
         self.ComplexIV(self.matrix)
         self.ATPSynthase(self.matrix)
         self.matrix.exportStatus(self.matrix)
-        logger.info(f"Cycle Completed: Matrix H+: {self.matrix.protonsM}, IMS H+: {self.matrix.protonsIM}, ATP: {self.matrix.ATP}, ΔΨ: {round(self.matrix.calc.protonDifferential() , 5)}")
+        logger.info(f"Cycle Completed: Matrix H+: {self.matrix.protonsM}, IMS H+: {self.matrix.protonsIM}, ATP: {self.matrix.ATP}, dif: {round(self.matrix.calc.protonDifferential() , 5)}")
 
 
 
