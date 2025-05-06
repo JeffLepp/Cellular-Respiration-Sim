@@ -1,7 +1,7 @@
 # 🧬 Cell Metabolism Simulator
 
 Open in VsCode or another IDE and run from cytoplasm.py in the MET3.0 folder. 
-Consoles made to log state of cell are made for linux. Running on other OS' cause unhelpful terminal outputs. 
+Consoles made to log state of cell are made for linux. Running on windows or mac will make it difficult to understand the outputs. 
 
 This project simulates core metabolic processes inside a eukaryotic cell, including:
 
