@@ -10,7 +10,7 @@ This project simulates core metabolic processes inside a eukaryotic cell, includ
 - **Electron Transport Chain (ETC)**
 - **ATP production & export to cytoplasm**
 
-It models molecule transformations, energy transfers, and redox reactions using Python classes and logs all major activity through a modular logging system. This is being actively developed.
+It models molecule transformations, energy transfers, and redox reactions using Python classes and logs all major activity through a modular logging system, though this is being actively developed. If you are familiar with vscode, download live server for index.html and run server.py to get more comprehensive graphs of cytoplasm and matrix states.
 
 https://www.linkedin.com/in/jefferson-kline-23b5b2218/
 
