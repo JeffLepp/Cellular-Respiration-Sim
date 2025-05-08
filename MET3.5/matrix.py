@@ -111,12 +111,12 @@ class ClassMatrixEnzymes():
         if (self.matrix.succinylCoA >= 1 and ((self.matrix.GDP >=1) or (self.matrix.ADP >= 1))):
             self.matrix.succinylCoA -= 1
             self.matrix.succinate += 1
-            if (self.matrix.GDP >= 1):
-                self.matrix.GDP -= 1
-                self.matrix.GTP += 1
-            elif (self.matrix.ADP >= 1):
+            if (self.matrix.ADP >= 1):
                 self.matrix.ADP -= 1
                 self.matrix.ATP += 1
+            elif (self.matrix.GDP >= 1):
+                self.matrix.GDP -= 1
+                self.matrix.GTP += 1
             
 
     def succinate_dehydrogenase(self):
