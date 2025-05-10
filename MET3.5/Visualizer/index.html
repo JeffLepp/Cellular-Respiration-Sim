@@ -8,20 +8,31 @@
 
     <style>
         #container {
-          display: flex;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
       
         svg {
           background-color: black;
           margin: 10px;
         }
+
+        #mitochondria-diagram {
+            background-color: transparent;
+        }
       </style>
 
 </head>
 <body>
 
-    <svg id="cytoplasm-chart"></svg>
-    <svg id="matrix-chart"></svg>
+    <div id="container">
+        <div id="charts">
+            <svg id="cytoplasm-chart"></svg>
+            <svg id="matrix-chart"></svg>
+        </div>
+        <svg id="mitochondria-diagram"></svg>
+    </div>
   
     <script>
         const svgWidth = 500, svgHeight = 300, barPadding = 5, borderSpacer = 6;
@@ -60,6 +71,9 @@
         
             drawChart(cytoplasmSVG, cytoplasmData);
             drawChart(matrixSVG, matrixData);
+
+            const protonCount = allData.matrix.protonsIM || 0;
+            updateIMSColor(protonCount);
         };
         
         function drawChart(svg, entries) {
@@ -102,8 +116,83 @@
                 .attr("fill", "white")
                 .attr("font-size", "11px");
             values.exit().remove();
+
         }
 
+        function updateIMSColor(protons) {
+            const protonMean = 11000;
+            const protonStdDev = 500000;
+            const z = (protons - protonMean) / protonStdDev;
+
+            // Normalize z to range [0, 1] assuming -3 ≤ z ≤ 3
+            const normalized = Math.max(0, Math.min(1, (z + 3) / 6));
+
+            // Use HSL hue from green (120°) to magenta (300°)
+            const hue = 120 + normalized * (300 - 120);
+            const color = `hsl(${hue}, 70%, 70%)`;
+
+            d3.select("#IMS-fill")
+                .transition()
+                .duration(300)
+                .attr("fill", color);
+        }
+
+
+        let mitoSVG = d3.select("#mitochondria-diagram")
+            .attr("width", 400)
+            .attr("height", 1000);
+
+        mitoSVG.append("ellipse")
+            .attr("id", "IMS-fill")
+            .attr("cx", 200)         
+            .attr("cy", 450)         
+            .attr("rx", 170)          
+            .attr("ry", 420)         
+            .attr("fill", "#d0f0c0");  
+
+        mitoSVG.append("ellipse")
+            .attr("cx", 200)         
+            .attr("cy", 450)         
+            .attr("rx", 150)          
+            .attr("ry", 400)         
+            .attr("fill", "#d0f0c0");  
+
+        // Inner membrane
+        mitoSVG.append("ellipse")
+            .attr("cx", 200)
+            .attr("cy", 450)
+            .attr("rx", 150)
+            .attr("ry", 400)
+            .attr("stroke", "blue")
+            .attr("fill", "none")
+            .attr("stroke-width", 2);
+
+        // Outer membrane
+        mitoSVG.append("ellipse")
+            .attr("cx", 200)
+            .attr("cy", 450)
+            .attr("rx", 170)
+            .attr("ry", 420)
+            .attr("stroke", "blue")
+            .attr("fill", "none")
+            .attr("stroke-width", 2);
+
+        // Optional: label regions
+        mitoSVG.append("text")
+            .attr("x", 200)
+            .attr("y", 90)
+            .attr("text-anchor", "middle")
+            .attr("fill", "black")
+            .text("IMS");
+
+        mitoSVG.append("text")
+            .attr("x", 200)
+            .attr("y", 200)
+            .attr("text-anchor", "middle")
+            .attr("fill", "black")
+            .text("Matrix");
         </script>
+
+        
 </body>
 </html>
